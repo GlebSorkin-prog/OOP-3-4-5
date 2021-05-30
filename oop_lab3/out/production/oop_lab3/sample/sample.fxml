@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #ffd5a8;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <ImageView fitHeight="791.0" fitWidth="1063.0" layoutX="-25.0" layoutY="-45.0" opacity="0.2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/1146_rsr003_00_p_1024x768.jpg" />
+         </image>
+      </ImageView>
+      <Text fx:id="label" fill="#543939" layoutX="83.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Restaurant" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Text>
+      <TableView fx:id="table" layoutX="72.0" layoutY="103.0" prefHeight="383.0" prefWidth="860.0">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="136.0" text="Name" />
+          <TableColumn fx:id="surname" prefWidth="137.0" text="Surname" />
+            <TableColumn fx:id="age" minWidth="0.0" prefWidth="99.0" text="Age, years" />
+            <TableColumn fx:id="number" prefWidth="98.0" text="ID" />
+            <TableColumn fx:id="skill" prefWidth="52.0" text="Skill" />
+            <TableColumn fx:id="department" prefWidth="125.0" text="Department" />
+            <TableColumn fx:id="coefficient" prefWidth="85.0" text="Coefficient" />
+            <TableColumn fx:id="salary" prefWidth="127.0" text="Salary" />
+        </columns>
+      </TableView>
+      <Button fx:id="btn_add" layoutX="72.0" layoutY="624.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="88.0" style="-fx-background-color: #ffd5a8; -fx-border-color: #543939; -fx-border-radius: 10; -fx-background-radius: 10; -fx-border-width: 3;" text="Add" textFill="#4d4545" />
+      <TextField fx:id="txt_name" layoutX="72.0" layoutY="579.0" prefHeight="31.0" prefWidth="143.0" promptText="Name" />
+      <TextField fx:id="txt_surname" layoutX="238.0" layoutY="579.0" prefHeight="31.0" prefWidth="143.0" promptText="Surname" />
+      <TextField fx:id="txt_age" layoutX="405.0" layoutY="579.0" prefHeight="31.0" prefWidth="95.0" promptText="Age" />
+      <TextField fx:id="txt_id" layoutX="523.0" layoutY="579.0" prefHeight="31.0" prefWidth="95.0" promptText="ID" />
+      <TextField fx:id="txt_skill" layoutX="644.0" layoutY="579.0" prefHeight="31.0" prefWidth="95.0" promptText="Skill" />
+      <ChoiceBox fx:id="choose_dep" layoutX="771.0" layoutY="576.0" prefHeight="37.0" prefWidth="167.0" style="-fx-background-color: #ffd5a8; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-width: 3; -fx-border-color: #543939;" />
+      <Text fill="#5b4d4d" layoutX="85.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Info about employees" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txt_rest" layoutX="296.0" layoutY="52.0" prefHeight="31.0" prefWidth="196.0" promptText="Restaraunt name" />
+      <MenuButton fx:id="btn_save" layoutY="-1.0" mnemonicParsing="false" style="-fx-background-color: #543939;" text="Serialize..." textFill="#d7bcbc">
+        <items>
+          <MenuItem fx:id="save_bin" mnemonicParsing="false" text="Binary" />
+          <MenuItem fx:id="save_xml" mnemonicParsing="false" text="XML" />
+            <MenuItem fx:id="save_xml2" mnemonicParsing="false" text="XML (tags and values only)" />
+            <MenuItem fx:id="save_txt" mnemonicParsing="false" text="Gson" />
+        </items>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </MenuButton>
+      <MenuButton fx:id="btn_read" layoutX="141.0" layoutY="-1.0" mnemonicParsing="false" style="-fx-background-color: #543939;" text="Deserialize..." textFill="#dac2c2">
+         <items>
+            <MenuItem fx:id="read_bin" mnemonicParsing="false" text="Binary" />
+            <MenuItem fx:id="read_xml" mnemonicParsing="false" text="XML" />
+            <MenuItem fx:id="read_txt" mnemonicParsing="false" text="Gson or XML" />
+         </items>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </MenuButton>
+      <Text fx:id="txt_error" fill="#9a4040" layoutX="72.0" layoutY="538.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="860.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="btn_change" layoutX="176.0" layoutY="624.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="88.0" style="-fx-background-color: #ffd5a8; -fx-border-color: #543939; -fx-border-radius: 10; -fx-background-radius: 10; -fx-border-width: 3;" text="Change" textFill="#4d4545" />
+      <Button fx:id="btn_remove" layoutX="284.0" layoutY="624.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="88.0" style="-fx-background-color: #ffd5a8; -fx-border-color: #543939; -fx-border-radius: 10; -fx-background-radius: 10; -fx-border-width: 3;" text="Remove" textFill="#4d4545" />
+      <Button fx:id="btn_change_name" layoutX="502.0" layoutY="49.0" mnemonicParsing="false" style="-fx-background-color: #ffd5a8; -fx-border-color: #543939; -fx-border-radius: 10; -fx-background-radius: 10; -fx-border-width: 3;" text="Change restaurant name" textFill="#4d4545" />
+      <ImageView fx:id="img_logo" fitHeight="80.0" fitWidth="80.0" layoutX="849.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="btn_view_logo" layoutX="715.0" layoutY="12.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="111.0" style="-fx-background-color: #ffd5a8; -fx-border-color: #543939; -fx-border-radius: 10; -fx-background-radius: 10; -fx-border-width: 3;" text="View logo" textFill="#4d4545" />
+      <Button fx:id="btn_change_logo" layoutX="715.0" layoutY="59.0" mnemonicParsing="false" style="-fx-background-color: #ffd5a8; -fx-border-color: #543939; -fx-border-radius: 10; -fx-background-radius: 10; -fx-border-width: 3;" text="Change logo" textFill="#4d4545" />
+   </children>
+</AnchorPane>

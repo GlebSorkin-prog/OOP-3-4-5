@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_241" class="java.beans.XMLDecoder">
+ <object class="java.util.LinkedList">
+  <void method="add">
+   <object class="sample.Manager">
+    <void property="age">
+     <int>14</int>
+    </void>
+    <void property="coefficient">
+     <double>2.5</double>
+    </void>
+    <void property="department">
+     <string>manager</string>
+    </void>
+    <void property="idCard">
+     <object class="sample.IdCard">
+      <void property="number">
+       <int>1245</int>
+      </void>
+      <void property="skill">
+       <double>0.1</double>
+      </void>
+     </object>
+    </void>
+    <void property="name">
+     <string>bob</string>
+    </void>
+    <void property="salary">
+     <double>1820.0</double>
+    </void>
+    <void property="surname">
+     <string>ll</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="sample.Officiant">
+    <void property="age">
+     <int>20</int>
+    </void>
+    <void property="coefficient">
+     <double>1.8</double>
+    </void>
+    <void property="department">
+     <string>officiant</string>
+    </void>
+    <void property="idCard">
+     <object class="sample.IdCard">
+      <void property="number">
+       <int>228</int>
+      </void>
+      <void property="skill">
+       <double>0.4</double>
+      </void>
+     </object>
+    </void>
+    <void property="name">
+     <string>mary</string>
+    </void>
+    <void property="salary">
+     <double>1540.0</double>
+    </void>
+    <void property="surname">
+     <string>jane</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="sample.Chef">
+    <void property="age">
+     <int>40</int>
+    </void>
+    <void property="coefficient">
+     <double>2.2</double>
+    </void>
+    <void property="department">
+     <string>chef</string>
+    </void>
+    <void property="idCard">
+     <object class="sample.IdCard">
+      <void property="number">
+       <int>7774</int>
+      </void>
+      <void property="skill">
+       <double>1.0</double>
+      </void>
+     </object>
+    </void>
+    <void property="name">
+     <string>gordon</string>
+    </void>
+    <void property="salary">
+     <double>2240.0</double>
+    </void>
+    <void property="surname">
+     <string>ramsey</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="sample.Janitor">
+    <void property="age">
+     <int>18</int>
+    </void>
+    <void property="coefficient">
+     <double>1.0</double>
+    </void>
+    <void property="department">
+     <string>janitor</string>
+    </void>
+    <void property="idCard">
+     <object class="sample.IdCard">
+      <void property="number">
+       <int>333</int>
+      </void>
+      <void property="skill">
+       <double>0.5</double>
+      </void>
+     </object>
+    </void>
+    <void property="name">
+     <string>vasya</string>
+    </void>
+    <void property="salary">
+     <double>1050.0</double>
+    </void>
+    <void property="surname">
+     <string>pupkin</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="sample.Bartender">
+    <void property="age">
+     <int>30</int>
+    </void>
+    <void property="coefficient">
+     <double>1.9</double>
+    </void>
+    <void property="department">
+     <string>bartender</string>
+    </void>
+    <void property="idCard">
+     <object class="sample.IdCard">
+      <void property="number">
+       <int>1111</int>
+      </void>
+      <void property="skill">
+       <double>0.66</double>
+      </void>
+     </object>
+    </void>
+    <void property="name">
+     <string>lola</string>
+    </void>
+    <void property="salary">
+     <double>1792.0</double>
+    </void>
+    <void property="surname">
+     <string>lola</string>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>

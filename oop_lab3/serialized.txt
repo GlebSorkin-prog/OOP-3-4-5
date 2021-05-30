@@ -1,0 +1,5 @@
+Employee: name-bob, surname-ll, age-14, IDcard-1245, skill-0.1, coefficient-2.5, department-manager, salary-1820.0
+Employee: name-mary, surname-jane, age-20, IDcard-228, skill-0.4, coefficient-1.8, department-officiant, salary-1540.0
+Employee: name-gordon, surname-ramsey, age-40, IDcard-7774, skill-1.0, coefficient-2.2, department-chef, salary-2240.0
+Employee: name-vasya, surname-pupkin, age-18, IDcard-333, skill-0.5, coefficient-1.0, department-janitor, salary-1050.0
+Employee: name-lola, surname-lola, age-30, IDcard-1111, skill-0.66, coefficient-1.9, department-bartender, salary-1792.0
